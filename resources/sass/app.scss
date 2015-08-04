@@ -1,0 +1,59 @@
+$base-color: #AF0000;
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+.x-menuDisplay {
+    .x-list-item > .x-innerhtml {
+        font-weight: bold;
+        line-height: 18px;
+				min-height: 61px;
+
+        > span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+
+.x-casesDisplay {
+    .x-list-item > .x-innerhtml {
+        font-weight: bold;
+        line-height: 18px;
+				min-height: 61px;
+
+        > span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+
+
+
+table { 
+  table-layout: fixed;
+  width: 100%
+}
+
+th {
+    background-color: #AF0000 !important;
+    color: white !important;
+    text-align: center !important;
+    word-wrap:break-word;
+}
+
+table, th, td {
+    word-wrap:break-word;
+    border: 1px solid #AF0000;
+    padding: 15px;
+}

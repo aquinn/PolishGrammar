@@ -1,0 +1,6 @@
+android/
+build/
+cordova/
+resources/sass/.sass-cache/
+.sencha/
+release.keystore
