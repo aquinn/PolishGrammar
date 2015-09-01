@@ -1,10 +1,11 @@
-Ext.define('PolishGrammar.model.Menu', {
+Ext.define('PolishGrammar.model.Pronoun', {
     extend: 'Ext.data.Model',
 
     config: {
         fields: [
             'item',
-            'description'
+            'pronounPolish',
+            'pronounEnglish'
         ]
     }
 });

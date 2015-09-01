@@ -13,10 +13,10 @@ Ext.define('PolishGrammar.view.Menu', {
         store: 'MenuItems',
         
         itemTpl: [
-            '{menuItem}',
+            '{item}',
             '<span>{description}</span>'
         ].join('')
-    },
+    }
 
 
 });

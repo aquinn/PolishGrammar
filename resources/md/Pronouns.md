@@ -170,6 +170,6 @@
 
 The negative of **każdy, każda, każde** is **żaden, żadna, żadne** *no, none, not any*. It is always accompanied by **nie**.
 
-**Każdy stół jest zajęty** ---- *Every table is occupied**
+**Każdy stół jest zajęty** ---- *Every table is occupied*
 
-**Żaden stół nie jest zajęty** ---- *No table is occupied**
+**Żaden stół nie jest zajęty** ---- *No table is occupied*

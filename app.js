@@ -21,8 +21,8 @@ Ext.application({
         'Main'
     ],
 
-    models: ['Menu', 'Cases'],
-    stores: ['MenuItems', 'CaseItems'],
+    models: ['Menu', 'Case', 'Pronoun'],
+    stores: ['MenuItems', 'CaseItems', 'PronounItems'],
     controllers: ['Application'],
 
     icon: {

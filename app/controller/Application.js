@@ -12,86 +12,54 @@ Ext.define('PolishGrammar.controller.Application', {
         refs: {
             main: 'main',
             menu: 'menu',
-            nouns: 'nouns',
             cases: 'cases',
-            nominative: 'nominative'
+            pronouns: 'pronouns',
         },
 
         control: {
-            menu: {
-                itemtap: 'onMenuSelect'
-            },
+
             main: {
                 back: 'onBackClick'
             },
+            menu: {
+                itemtap: 'menuSelect'
+            },
             cases: {
-                itemtap: 'onCaseSelect'
+                itemtap: 'menuSelect'
+            },
+            pronouns: {
+                itemtap: 'menuSelect'
             }
         }
     },
 
 
+    menuSelect: function(list, index, node, record) {
 
-
-    onCaseSelect: function(list, index, node, record) {
-
-
-        var caseItem = (list.getStore().getAt(index).data.caseItem);
-       
-
-        if (!ENSURE_NO_DOUBLE_TAP(caseItem)) {
-            // means we've clicked it already
-            flag = null;
-            return;
-        } 
-
-        flag = caseItem; 
-
-        var url =  'resources/html/' + caseItem + '.md.html';
-        var panel = Ext.create('Ext.Panel', {
-            title: caseItem,
-            xtype: 'panel',
-            itemId: 'caseView',
-            fullscreen: 'true',
-            layout: 'fit',
-            styleHtmlContent: true,
-            scrollable: 'vertical'
-        });
-        
-        Ext.Ajax.request({
-            url: url,
-                success: function(response, opts) {
-                    panel.setHtml(response.responseText);
-            }
-        });
-        this.getMain().push(panel);
-
-    
-    },
-
-    onBackClick: function() {
-        flag = null;
-    },
-
-    onMenuSelect: function(list, index, node, record) {
-        var item = (list.getStore().getAt(index).data.menuItem);
+        var item = record.get('item');
+        console.log(item);
 
         if (!ENSURE_NO_DOUBLE_TAP(item)) {
-            // means we've clicked it already
             flag = null;
             return;
         } 
 
         flag = item; 
-        
+
         if (item == 'Cases') {
             var caseList = Ext.create('PolishGrammar.view.Cases');
             this.getMain().push(caseList);
-        } else {
+        } else if (item == 'Pronouns') {
+            var pronounsList = Ext.create('PolishGrammar.view.Pronouns');
+            this.getMain().push(pronounsList);
+        }
+
+        else {
+
             var url =  'resources/html/' + item + '.md.html';
             var panel = Ext.create('Ext.Panel', {
-                xtype: 'panel',
                 title: item,
+                xtype: 'panel',
                 itemId: 'menuView',
                 fullscreen: 'true',
                 layout: 'fit',
@@ -105,18 +73,24 @@ Ext.define('PolishGrammar.controller.Application', {
                         panel.setHtml(response.responseText);
                 }
             });
-           
             this.getMain().push(panel);
         }
+    
+    },
+
+    onBackClick: function() {
+        flag = null;
     }
+
+
 
 });
 
 function ENSURE_NO_DOUBLE_TAP(classNameToPush) {
-    //console.log(flag, classNameToPush);
     if(flag==classNameToPush) {
         return false;
     } 
     return true;
 };
+
 

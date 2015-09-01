@@ -38,6 +38,20 @@ $base-color: #AF0000;
     }
 }
 
+.x-pronounDisplay {
+    .x-list-item > .x-innerhtml {
+        font-weight: bold;
+        line-height: 18px;
+                min-height: 61px;
+
+        > span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
+
 
 
 table { 

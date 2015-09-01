@@ -1,9 +1,9 @@
-Ext.define('PolishGrammar.model.Cases', {
+Ext.define('PolishGrammar.model.Case', {
     extend: 'Ext.data.Model',
 
     config: {
         fields: [
-            'caseItem',
+            'item',
             'polish',
             'usage'
         ]

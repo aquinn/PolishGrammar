@@ -13,7 +13,7 @@ Ext.define('PolishGrammar.view.Cases', {
         store: 'CaseItems',
         
         itemTpl: [
-           '{caseItem}',
+           '{item}',
            '<span>{polish} : {usage}</span>'
         ].join('')
     }

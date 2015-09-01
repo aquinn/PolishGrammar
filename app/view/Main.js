@@ -5,6 +5,7 @@ Ext.define('PolishGrammar.view.Main', {
     requires: [
         'PolishGrammar.view.Menu',
         'PolishGrammar.view.Cases',
+        'PolishGrammar.view.Pronouns'
 
     ],
 

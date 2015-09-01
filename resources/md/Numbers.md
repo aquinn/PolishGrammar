@@ -10,7 +10,7 @@ dwaj*), **3** (*trzy, masc.pers. trzej*), **4** (*cztery, masc.pers. czterej*) t
 
 *	Numbers five and above are followed by the Genitive plural of the counted noun, 
 as though one were saying *‘five of horses’* and so on. **Pięć koni** (*five horses*), **sześć
-krów** (*six cows*), **siedem zeszytów** (*seven notebooks*) and **dziesięciu chłopców* (*10 boys*)
+krów** (*six cows*), **siedem zeszytów** (*seven notebooks*) and **dziesięciu chłopców** (*10 boys*)
 
 
 

@@ -6728,19 +6728,30 @@ body.x-desktop {
     font-size: 14px;
     font-weight: normal; }
 
-/* line 43, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
+.x-pronounDisplay .x-list-item > .x-innerhtml {
+  font-weight: bold;
+  line-height: 18px;
+  min-height: 61px; }
+  /* line 47, ../sass/app.scss */
+  .x-pronounDisplay .x-list-item > .x-innerhtml > span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal; }
+
+/* line 57, ../sass/app.scss */
 table {
   table-layout: fixed;
   width: 100%; }
 
-/* line 48, ../sass/app.scss */
+/* line 62, ../sass/app.scss */
 th {
   background-color: #AF0000 !important;
   color: white !important;
   text-align: center !important;
   word-wrap: break-word; }
 
-/* line 55, ../sass/app.scss */
+/* line 69, ../sass/app.scss */
 table, th, td {
   word-wrap: break-word;
   border: 1px solid #AF0000;

@@ -6,16 +6,16 @@ Ext.define('PolishGrammar.store.MenuItems', {
         autoLoad: true,
         data : [
             
-            {    "menuItem": "Nouns", "description": "Rzeczowniki: Masculine, Feminine and Neuter"  },
-            {    "menuItem": "Cases", "description": "Przypadki: Polish has seven noun cases"                },
-            {    "menuItem": "Pronouns", "description": "Zaimki: ja, ty, on, ona..."                             },
-            {    "menuItem": "Adjectives", "description": "Przymiotniki: dobra, dobry, dobre"                           },
-            {    "menuItem": "Prepositions", "description": "Przyimki: na, po, o, w"                         },      
-            {    "menuItem": "Numbers", "description": "Liczebniki: raz, dwa, trzy"                              },
- //           {    "menuItem": "Verbs", "description": "Verb conjugations"               },
-            {    "menuItem": "Conjunctions", "description": "Spójniki: and, but, either, or..."  },
-            {    "menuItem": "Alphabet", "description": "Alfabet: Polish has 32 letters"        },
-            {    "menuItem": "About", "description": "Andy Quinn"        }
+            {    "item": "Nouns", "description": "Rzeczowniki: Masculine, Feminine and Neuter"  },
+            {    "item": "Cases", "description": "Przypadki: Polish has seven noun cases"                },
+            {    "item": "Pronouns", "description": "Zaimki: ja, ty, on, ona..."                             },
+            {    "item": "Adjectives", "description": "Przymiotniki: dobra, dobry, dobre"                           },
+            {    "item": "Prepositions", "description": "Przyimki: na, po, o, w"                         },      
+            {    "item": "Numbers", "description": "Liczebniki: raz, dwa, trzy"                              },
+ //           {    "item": "Verbs", "description": "Verb conjugations"               },
+            {    "item": "Conjunctions", "description": "Spójniki: and, but, either, or..."  },
+            {    "item": "Alphabet", "description": "Alfabet: Polish has 32 letters"        },
+            {    "item": "About", "description": "Andy Quinn"        }
         ]
     }
 });
